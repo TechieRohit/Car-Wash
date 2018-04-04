@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.rohit.carwash.Activity.Cart"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3b5998"
+        android:id="@+id/address_toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:clickable="false"
+        android:focusable="false"
+        app:title="Address "
+        android:focusableInTouchMode="false"
+        android:layout_gravity="center">
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/house"
+        android:layout_marginTop="80dp"
+        android:hint="House No. ,Street"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/city"
+        android:layout_marginTop="15dp"
+        android:hint="City"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_no"
+        android:layout_marginTop="15dp"
+        android:hint="CAR NUMBER"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/mobile"
+        android:layout_marginTop="15dp"
+        android:hint="Mobile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Amount - Rs 500"
+        android:id="@+id/amount"
+        android:layout_marginTop="40dp"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="CHECKOUT"
+        android:id="@+id/proceed"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp" />
+</LinearLayout>
